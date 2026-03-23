@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古诗词选集 - 九年义务教育必背</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>古诗词选集</h1>
+        <p class="subtitle">九年义务教育必背古诗词</p>
+    </header>
+
+    <div class="container">
+        <!-- 筛选区 -->
+        <section class="filters">
+            <div class="filter-group">
+                <label>朝代</label>
+                <select id="dynasty-filter">
+                    <option value="">全部</option>
+                    <option value="先秦">先秦</option>
+                    <option value="汉魏">汉魏</option>
+                    <option value="唐代">唐代</option>
+                    <option value="宋代">宋代</option>
+                    <option value="元明清">元明清</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>作者</label>
+                <select id="author-filter">
+                    <option value="">全部</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>风格</label>
+                <select id="style-filter">
+                    <option value="">全部</option>
+                    <option value="山水田园">山水田园</option>
+                    <option value="边塞征战">边塞征战</option>
+                    <option value="思乡怀人">思乡怀人</option>
+                    <option value="咏史怀古">咏史怀古</option>
+                    <option value="抒情言志">抒情言志</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>优先级</label>
+                <select id="priority-filter">
+                    <option value="">全部</option>
+                    <option value=" compulsory">九年义务教育必背</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- 统计 -->
+        <div class="stats">
+            共 <span id="total-count">0</span> 首古诗词
+        </div>
+
+        <!-- 诗词列表 -->
+        <div id="poetry-list" class="poetry-list">
+            <!-- JS 动态生成 -->
+        </div>
+    </div>
+
+    <!-- 诗词详情弹窗 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>纯静态 · 免费开源 · 低成本托管</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
