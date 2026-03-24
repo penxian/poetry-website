@@ -1,0 +1,25 @@
+{
+  "name": "poetry-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://penxian.github.io/poetry-website/",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.99.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
